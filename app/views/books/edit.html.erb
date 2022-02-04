@@ -1,31 +1,6 @@
 <h1>Editing Book</h1>
-<%= form_for(@book) do |form| %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
-
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.text_field :publishedDate %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
-
+<%= render 'form', book: @book %>
 
 <%= link_to 'Show', @book %> 
 <%= link_to 'Back', books_path %>
