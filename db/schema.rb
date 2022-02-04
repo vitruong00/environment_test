@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_02_02_200902) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "author"
     t.decimal "price"
-    t.date "publishedDate"
+    t.date "published_date"
   end
 
 end
